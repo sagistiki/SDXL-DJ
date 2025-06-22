@@ -1,0 +1,89 @@
+.crossfader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.crossfader-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ff88;
+  width: 30px;
+  text-align: center;
+}
+
+.crossfader-track {
+  flex: 1;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.crossfader-slider {
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.crossfader-slider::-webkit-slider-track {
+  height: 8px;
+  background: linear-gradient(90deg, 
+    #ff4444 0%, 
+    #ffaa00 25%, 
+    #00ff88 50%, 
+    #00aaff 75%, 
+    #ff44ff 100%
+  );
+  border-radius: 4px;
+}
+
+.crossfader-slider::-webkit-slider-thumb {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 2px solid #00ff88;
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.crossfader-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.1);
+}
+
+.crossfader-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.marker {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.marker.center {
+  background: rgba(255, 255, 255, 0.4);
+  height: 20px;
+}
+
+.crossfader-value {
+  width: 50px;
+  text-align: center;
+  font-family: monospace;
+  color: #aaa;
+  font-size: 0.9rem;
+}

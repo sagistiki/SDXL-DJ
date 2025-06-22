@@ -2,7 +2,7 @@
 
 An interactive Electron application that generates AI images in real-time using ONNX Runtime and SDXL models. Perfect for live performances, creative sessions, and AI-powered visual art.
 
-SDXL DJ Interface ![AI Models](https://img.shields.io/badge/AI-SDXL%20%2B%20LCM-green) ![Status](https://img.shields.io/badge/Status-Working-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Electron-blue) ![AI Models](https://img.shields.io/badge/AI-SDXL%20%2B%20LCM-green) ![Status](https://img.shields.io/badge/Status-Working-brightgreen)
 
 ## ✨ Features
 
@@ -27,8 +27,8 @@ SDXL DJ Interface ![AI Models](https://img.shields.io/badge/AI-SDXL%20%2B%20LCM-
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/sdxl-dj.git
-   cd sdxl-dj
+   git clone https://github.com/sagistiki/SDXL-DJ.git
+   cd SDXL-DJ
    ```
 
 2. **Install dependencies**
@@ -196,7 +196,7 @@ The app provides detailed console logging:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Ad§d amazing feature'`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
@@ -210,7 +210,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **ONNX Runtime** team for inference engine
 - **LCM** (Latent Consistency Models) for fast generation
 - **Electron** community for desktop app framework
-
 
 ---
 

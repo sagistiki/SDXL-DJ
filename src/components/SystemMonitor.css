@@ -1,0 +1,144 @@
+.system-monitor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 60px;
+}
+
+.stat-icon {
+  color: #00ff88;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  min-width: 35px;
+}
+
+.stat-label {
+  font-size: 8px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.stat-value {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-detail {
+  font-size: 7px;
+  color: #666;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
+}
+
+.stat-bar {
+  width: 25px;
+  height: 2px;
+  background: #333;
+  border-radius: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.stat-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.activity-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  color: #00ff88;
+}
+
+.activity-icon {
+  animation: pulse 2s infinite;
+}
+
+.activity-text {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .system-monitor {
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .stat-item {
+    min-width: 100px;
+  }
+  
+  .stat-detail {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .system-monitor {
+    gap: 15px;
+    height: 50px;
+  }
+  
+  .stat-item {
+    min-width: 80px;
+  }
+  
+  .stat-bar {
+    width: 30px;
+  }
+}

@@ -1,0 +1,91 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production
+dist/
+dist-electron/
+release/
+
+# AI Models (large files - should be downloaded separately)
+public/models/
+!public/models/.gitkeep
+*.onnx
+*.onnx_data
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.pkl
+*.h5
+*.tflite
+*.pb
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+config/secrets.json
+*.key
+*.pem
+*.p12
+
+# Generated images and outputs
+generated_images/
+output/
+temp/
+cache/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Electron specific
+.electron-gyp
+.electron-prebuilt
+
+# Coverage and testing
+coverage/
+.nyc_output/
+.coverage
+.pytest_cache/
+
+# Package managers
+.yarn/
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional ESM cache
+.esm-cache/
